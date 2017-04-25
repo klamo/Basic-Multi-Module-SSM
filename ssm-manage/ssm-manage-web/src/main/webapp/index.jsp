@@ -25,5 +25,10 @@
 
 <a href="/sysUserController/showUserToJSONById/1" target="_blank">查询用户信息并直接输出JSON数据</a>
 
+<br>
+
+<a href="/userController/deleteUserById/2" target="_blank">测试单元测试事务</a>
+
+<a href="/sysUserController/deleteByPrimaryKey/4" target="_blank">测试单元测试事务2</a>
 </body>
 </html>

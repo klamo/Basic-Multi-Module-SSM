@@ -1,7 +1,5 @@
 package com.youmeek.ssm;
 
-import com.youmeek.ssm.manage.pojo.SysUser;
-import com.youmeek.ssm.manage.pojo.User;
 import com.youmeek.ssm.manage.service.SysUserService;
 import com.youmeek.ssm.manage.service.UserService;
 import org.apache.log4j.Logger;
@@ -26,19 +24,25 @@ public class SSMTest {
 
 	@Test
 	public void test1() {
-		SysUser sysUser = sysUserService.getById(1L);
-		logger.info("--------------------------------" + sysUser.toString());
+		//SysUser sysUser = sysUserService.getById(2L);
+		//logger.info("--------------------------------" + sysUser.toString());
 	}
 
 	@Test
 	public void test2() {
-		userService.deleteUserById(3L);
+//		userService.deleteUserById(6L);
 		System.out.println("-------------success-------------------");
 	}
 
 	@Test
 	public void test3() {
-		User user = userService.queryUserById(2L);
-		System.out.println("--------------------------------"+user.toString());
+		//User user = userService.queryUserById(1L);
+		//System.out.println("--------------------------------"+user.toString());
+	}
+
+	@Test
+	public void test4() {
+//		sysUserService.deleteByPrimaryKey(3L);
+		//System.out.println("--------------success--------------------");
 	}
 }

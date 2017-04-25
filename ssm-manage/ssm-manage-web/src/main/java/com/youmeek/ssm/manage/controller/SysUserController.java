@@ -30,6 +30,13 @@ public class SysUserController {
 		SysUser user = sysUserService.getById(userId);
 		return user;
 	}
+
+
+	@RequestMapping("/deleteByPrimaryKey/{userId}")
+	public String deleteByPrimaryKey(Model model, @PathVariable("userId") Long userId){
+		sysUserService.deleteByPrimaryKey(userId);
+		return "showUser";
+	}
 	
 	
 

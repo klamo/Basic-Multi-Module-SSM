@@ -19,4 +19,11 @@ public class SysUserServiceImpl implements SysUserService {
 	public SysUser getById(Long id) {
 		return sysUserMapper.selectByPrimaryKey(id);
 	}
+
+	@Override
+	public void deleteByPrimaryKey(Long id) {
+		sysUserMapper.deleteByPrimaryKey(id);
+/*		int a = 1/0;
+		System.out.println("----------"+a);*/
+	}
 }
